@@ -1,0 +1,8 @@
+apiVersion : v2
+kind: Pod
+metadata:
+   name: bot
+spec:
+   containers:
+    - name : botcon
+      image: 150762/bot1:v1   

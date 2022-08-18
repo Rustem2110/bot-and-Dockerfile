@@ -1,0 +1,17 @@
+apiVersion : v1
+kind: Pod
+metadata:
+   name: bot
+   labels:
+     env  : prod
+     app  : main
+     tier : frontend
+     owner: RusKh
+spec:
+   containers:
+    - name : botcon
+      image: 150762/bot1:v1
+      ports: 
+       - containerPort: 80  
+    - name : botcon1
+      image: 150762/bot1:latest
